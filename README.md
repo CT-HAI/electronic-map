@@ -1,7 +1,3 @@
 ## Welcome to GitHub Pages
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  [Web link]('https://ct-hai.github.io/electronic-map/index.html')
 

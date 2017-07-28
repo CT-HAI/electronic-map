@@ -1,4 +1,4 @@
-document.write('<script type="text/javascript" src="jquery-3.1.1.min.js"></script>');
+document.write("<script language=javascript src='jquery-3.1.1.min.js'></script>");
 var scale = 5;//初始化缩放比例
 var isClick = 0;//判断用户是否点击地图上的元素
 var coordX_c = null;//初始化被点击元素的横坐标,作为该元素被点击的标识符

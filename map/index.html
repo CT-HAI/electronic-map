@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>浙江工业大学屏峰校区地图</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+</head>
+<body>
+    <div class="container">
+    	<img class="map" usemap="#mapTest" src="image\map1.jpg">
+    		<map name="mapTest" id="mapTest">
+    			<area name="郁文楼勤工" shape="circle" coords="290,560,10">
+    			<area name="畅远楼勤工" shape="circle" coords="324,360,10">
+    			<area name="仁和楼勤工" shape="circle" coords="308,382,10">
+    			<area name="理学楼勤工" shape="circle" coords="482,490,10">
+    			<area name="语林楼勤工" shape="circle" coords="562,492,10">
+    			<area name="致远楼勤工" shape="circle" coords="560,508,10">
+    			<area name="广知楼勤工" shape="circle" coords="592,450,10">
+    			<area name="图书馆勤工" shape="circle" coords="512,370,10">
+    			<area name="法学楼勤工" shape="circle" coords="190,444,10">
+ 				<area name="博易楼勤工" shape="circle" coords="344,468,10">
+ 				<area name="健行楼勤工" shape="circle" coords="512,458,10">
+ 				<area name="家和西苑勤工" shape="circle" coords="780,294,10">
+ 				<area name="家和四楼勤工" shape="circle" coords="822,242,10">
+ 				<area name="勤工中心" shape="circle" coords="810,326,10">
+ 				<area name="东十六勤工" shape="circle" coords="1080,268,10">
+ 				<area name="校医室" shape="circle" coords="716,308,10">
+ 				<area name="家和堂" shape="circle" coords="826,268,10">
+ 				<area name="养贤府" shape="circle" coords="1030,356,10">
+ 				<area name="缙云烧饼" shape="circle" coords="900,274,10">
+ 				<area name="天鹅湖" shape="circle" coords="430,376,10">
+ 				<area name="校车" shape="circle" coords="604,492,10">
+    		</map>
+    </div>
+</body>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var e = $(".map");
+		var region = $("area");
+		var box = $("#box");
+		var width = 180;
+		/*drag(e);//拖动控件
+		zoom(e);//缩放控件*/
+		addDetails(region, e, box, width);//添加注释控件
+	})
+</script>
+</html> 

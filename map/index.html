@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
 	<title>浙江工业大学屏峰校区地图</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/map.css">
 </head>
 <body>
@@ -37,13 +38,17 @@
 <script type="text/javascript" src="js/map.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		var e = $(".map");
-		var region = $("area");
-		var box = $("#box");
-		var width = 180;
-		/*drag(e);//拖动控件
-		zoom(e);//缩放控件*/
-		addDetails(region, e, box, width);//添加注释控件
+        var e = $(".map");
+        var region = $("area");
+        var box = $("#box");
+        var width = 180;
+        if(browser.versions.mobile)
+        {
+            $(".map").css('margin-left','-200px');
+        }
+        addDetails(region, e, box, width);//添加注释
+	/*drag(e);//拖动
+	zoom(e);//缩放*/
 	})
 </script>
 </html> 
